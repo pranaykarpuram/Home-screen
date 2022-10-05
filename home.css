@@ -1,0 +1,49 @@
+
+.enforcelistimg {
+    width: 50%;
+    height: 50%;
+    margin-left: 20%;
+    margin-right: auto;
+  }
+  
+  .enforcelistimg2 {
+    width: 50%;
+    height: 50%;
+   
+  }
+  
+  #ndnecinfo {
+    margin-left: 10%;
+    text-align:right ;  
+  }
+  
+  .sec {
+   
+    text-align: center;
+  }
+  
+  .sec > img {
+    margin-left: 1%;
+    margin-right: 0%;
+    background-color: blue;
+  }
+  
+  .breadnav {
+    margin-left: 2%;
+    text-decoration: none;
+  }
+  
+  .breadnav > ol > a{
+    text-decoration: none;
+  }
+  
+  .breada {
+    text-decoration: none;
+  }
+
+  .box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: brown;
+  }

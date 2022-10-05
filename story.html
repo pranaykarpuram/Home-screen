@@ -1,0 +1,72 @@
+{% extends "stdlayout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block extrahead %}
+<!--<link href="/static/offers.css" rel="stylesheet" type="text/css" defer>
+<script src="/static/offers.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
+{% endblock %}
+{% block body %}
+
+<style>
+.us img{
+    height: auto;
+    width: 420ox;
+} 
+.text{
+    width: 550px;
+}
+.text h1{
+    color: aquamarine;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.text h5{
+    color: aquamarine;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.text p{
+    color: tomato;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+</style>
+
+<section class="us">
+    <div class="main">
+        <img src="1.png">
+        <div class="text">
+            <h1>About us?</h1>
+            <h5>Person 1</h5>
+            <p>wpoasjaposapjndankaldaklsaksaljisapisapojad</p>
+        </div>
+    </div>
+    <div class="main">
+        <img src="1.png">
+        <div class="text">
+            <h5>Person 2</h5>
+            <p>wpoas 
+                japos a  pjndankal daklsak 
+                saljisapisapojad</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "stdlayout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block extrahead %}
+<!--<link href="/static/offers.css" rel="stylesheet" type="text/css" defer>
+<script src="/static/offers.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
+{% endblock %}
+{% block body %}
+<!--<div class="container">
+    <div class="topbar">
+        <a href="/templates/profile.html">Profile</a>
+        <a href="/templates/settings.html">Settings</a>
+        <a href="/templates/donationform.html">Donate Now!</a> We don't need this. Please join the new meeting
+    </div>
+</div>-->
+<head>
+
+</head>
+<style>
+    
+.box{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 20%;
+    box-shadow: -1px 0 10px #000;
+    width: 200px;
+    height: 250px;
+    color: brown;
+    align-self: center;
+    justify-content: center;
+}
+img{
+  width: 200px;
+  height: 100px;
+}
+    </style>
+<body>
+<nav aria-label="breadcrumb" class="breadnav">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#" class="breada">Home</a></li> <!--has to send home-->
+      <li class="breadcrumb-item" aria-current="page"><a href="/viewoffers" class="breada">Offers</a></li>
+      <li class="breadcrumb-item" aria-current="page" id="itemcrumb">Item{Enter item id here}</li>
+    </ol>
+  </nav><br>
+  <div class="slideshow-container">
+    <div class="posterimg">
+    <img src="/static/pexels-cottonbro-4065905.jpg" style="border-radius: 50%; max-width: 10%;" id="r">
+    <h1 style="display: inline-block" class="dononame" id="actuallyitemname"> &nbsp;   Donor Name Here</h1>
+    <br><br>  
+    </div>
+  
+  <div class="mySlides fades">
+    <div class="numbertext">Image 1</div>
+    <img src="/1.jpg" style="width:100%;" id="img1"> <!--consider this quality concern-->
+    <div class="text">Image One</div>
+  </div>
+<!---Change images to the one we get later-->  
+  <div class="mySlides fades">
+    <div class="numbertext">Image 2</div>
+    <img src="/1.jpg" style="width:100%" id="img2">
+    <div class="text">Image Two</div>
+  </div>
+  
+  <div class="mySlides fades">
+    <div class="numbertext">Image 3</div>
+    <img src="/1.jpg" style="width:100%" id="img3">
+    <div class="text">Image Three</div>
+  </div>
+  
+  
+  <div class="mySlides fades" id="myslide4">
+      <div class="numbertext">Image 4</div>
+      <img src="/1.jpg" style="width:100%" id="img4">
+      <div class="text">Image Four</div>
+    </div>
+  
+  
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center" id="dothome">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onlclick="currentSlide(4)"><span> 
+  </div>
+
+<!--Update hrefs and images-->
+  <div class="box">
+    <img src="/home/1.png">
+    <h2>Who we are</h2>
+    <a href="story.html"><input type="button" value="Read Story"></a> 
+  </div>
+  <div class="box">
+    <img src="/home/1.png">
+    <h2>What we do</h2>
+    <a href="instagram.com"><input type="button" value="Our Social Media"></a> 
+</div>
+  <div class="box">
+    <img src="/home/1.png">
+    <h2>Get Involved</h2>
+    <a href="donationform.html"><input type="button" value="Donate Now!"></a> 
+</div>
+
+
+</body>
+{% endblock %}
